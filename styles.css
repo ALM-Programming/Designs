@@ -1,0 +1,101 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  background: linear-gradient(35deg, rgb(12, 12, 12) 60%, rgb(192, 77, 77)) no-repeat rgb(12, 12, 12);
+  background-repeat: no-repeat;
+}
+
+.title {
+  color: rgb(179, 79, 179);
+  text-shadow: rgb(0, 0, 0) 0px 0px 1em;
+}
+
+.title h1 {
+  font-size: 5em;
+  margin: 0px 0px 0.5em;
+}
+
+div.wrapper {
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  column-gap: 4em;
+  row-gap: 2em;
+}
+
+.i1:hover, .i2:hover, .i3:hover, .i4:hover, .i5:hover, .i6:hover, .i7:hover, .i8:hover, .i9:hover, .i10:hover, .i11:hover, .i12:hover {
+  filter: drop-shadow(gold 0px 0px 0.5em);
+  cursor: pointer;
+}
+
+.gallery, .i1, .i2, .i3, .i4, .i5, .i6, .i7, .i8, .i9, .i10, .i11, .i12 {
+  width: 15em;
+  height: 15em;
+  border-radius: 1em;
+}
+
+.img1, .img2, .img3, .img4 {
+  grid-row: 1 / 2;
+}
+
+.img5, .img6, .img7, .img8 {
+  grid-row: 2 / 3;
+}
+
+.img9, .img10, .img11, .img12 {
+  grid-row: 3 / 4;
+}
+
+.img1, .img5, .img9 {
+  grid-column: 1 / 4;
+}
+
+.img2, .img6, .img10 {
+  grid-column: 4 / 7;
+}
+
+.img3, .img7, .img11 {
+  grid-column: 7 / 10;
+}
+
+.img4, .img8, .img12 {
+  grid-column: 10 / 13;
+}
+
+.open-img-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.open-img {
+  display: flex;
+  row-gap: 2em;
+  flex-flow: column wrap;
+}
+
+i {
+  font-size: 3em;
+  color: wheat;
+  cursor: pointer;
+  align-self: flex-end;
+  filter: drop-shadow(black 0px 0px 0.3em);
+}
+
+#modal-img {
+  filter: drop-shadow(gold 0px 0px 0.7em);
+  max-width: 40em;
+  border-radius: 1em;
+}
+
+
