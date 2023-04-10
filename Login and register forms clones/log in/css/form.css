@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;800&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    display: flex;    
+}
+
+a { text-decoration: none; }
+a:link, a:visited, a:hover, a:active {
+    color: rgb(78,60,210);
+}
+
+.login {
+    margin: auto;
+    width: 350px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.btn-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    margin-bottom: 25px;
+}
+
+button {
+    display:flex;
+    flex-flow: row wrap;
+    max-height: 36px;
+    color: white;
+}
+    button:hover {
+        cursor: pointer;
+    }
+
+button img {
+    display: flex;
+    width: 2.4em;
+    padding: 2px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* GOOGLE BUTTON */
+button.login-google {
+    background-color: rgb(27,115,233);
+    border-radius: 4px;
+    font-weight: 400;
+    padding: 2px;
+    height: 35x;
+}
+    button.login-google:hover {
+    opacity: 0.8;        
+    }
+    button.login-google img {
+        background-color: white;
+        flex: 1;        
+        align-self: center;
+        justify-content: flex-start;
+    }
+    button.login-google span {
+        flex: 11;
+        align-self: center;
+        padding: 0 1.7em;
+    }
+
+/* TWITTER BUTTON */
+button.twitter-btn {
+    background-color: #f2f3f2;
+    border-radius: 8px;
+    padding: 10px 12px;
+    height: 35x;
+}
+    button.twitter-btn:hover {
+        background-color: #e0e0e0;
+    }
+    button.twitter-btn img {
+        opacity: 0.6;
+        width: 15px;
+        align-self: center;
+        justify-content: center;
+    }
+
+/* SUBMIT BUTTON */
+button[type="submit"] {
+    background-color: #eb4d89;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+}
+    button[type="submit"]:hover {
+        opacity: 0.6;        
+    }
+
+/* FORM */
+label.pass {
+    display: block;
+}
+a.pass {    
+    position: relative;
+    font-size: 14px;
+    float: right;    
+    font-weight: normal;
+    top: 4px;
+}
+
+input {    
+    padding: 10px 1em;
+    width: 100%;
+    background-color: rgb(242,243,245);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+    input:hover, input:focus {
+        background-color: #fff;
+        border: 1px solid rgb(242,243,245);
+        box-shadow: 0 0 4px rgba(234 76 137);
+    }
+
+label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 14px 0 6px;
+}
+
+/* SEPARATOR */
+.separator {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 0 14px 0
+}
+
+hr {
+    flex: 9;
+    border-bottom: 1px solid rgb(225,225,224);
+}
+
+div.separator > span {
+    flex: 1;
+    font-size: 0.9em;
+    padding: 0 1em;
+    color: rgb(132,109,123);
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.registro {
+    align-self: center;
+    font-size: 0.9em;
+}
